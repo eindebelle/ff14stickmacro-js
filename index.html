@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>FF14 Sticky Macro.js</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+  <script src="main.js"></script>
+</head>
+<body>
+<h1>FF14 Sticky Macro.js</h1>
+マクロをペースト＆編集
+<div>
+  <textarea id="macro" rows="5" cols="80"></textarea><br>
+  ポジション: <select id="position">
+  <option></option>
+  <option>MT</option>
+  <option>ST</option>
+  <option>H1</option>
+  <option>H2</option>
+  <option>D1</option>
+  <option>D2</option>
+  <option>D3</option>
+  <option>D4</option>
+</select>
+  第2キーワード: <select id="keyword">
+  <option></option>
+  <option>T</option>
+  <option>H</option>
+  <option>D</option>
+  <option>TH</option>
+  <option>PH</option>
+  <option>BH</option>
+  <option>DPS</option>
+</select>
+
+</div>
+<hr>
+<video id="video"></video>
+<div>
+  <button id="btn-pinp">ピクチャーインピクチャーで表示</button>
+  <br>
+  または、右クリックしてピクチャーインピクチャーで表示
+</div>
+<div id="debug">
+</div>
+<canvas id="canvas" style="display:none;"></canvas>
+</body>
+</html>
