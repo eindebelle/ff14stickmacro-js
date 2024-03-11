@@ -31,12 +31,13 @@ function draw_1line( ctx, text, pos, y ){
 function get_common_prefix( text ){
     let lines = text.split( '\n' );
     let str1 = lines[0];
-    let str2 = lines[1];
-
+    // 最初の5行くらいを見て取り除くべき共通の行頭テキストを返す
+    let head = lines.slice(1,6);
     let result = "";
     for( let i = 1; i < str1.length; i++ ){
-        if( str2.indexOf( str1.substring( 0, i ) ) >= 0 ){
-            result = str1.substring( 0, i );
+        let substr = str1.substring( 0, i );
+        if( head.every( ( s ) => s.indexOf( substr ) >= 0 ) ){
+            result = substr;
         }
     }
     return result;
