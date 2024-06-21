@@ -64,7 +64,7 @@ function draw(){
     ctx.fillStyle = 'white';
     let lines = macro.split( '\n' );
     let maxWidth = 0;
-    let lineHeight = 30; // フォントサイズに基づく行の高さ
+    let lineHeight = 34; // フォントサイズに基づく行の高さ
     let totalHeight = lines.length * lineHeight;
 
     for( let i = 0; i < lines.length; i++ ){
